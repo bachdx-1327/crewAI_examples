@@ -2,7 +2,7 @@ from textwrap import dedent
 from crewai import Task
 
 class Tasks():
-    def research_company_culture_task(self, agent, company_desciption, company_domain):
+    def research_company_culture_task(self, agent, company_description, company_domain):
         return Task(
             description=dedent(f"""\
 								Analyze the provided company website and the hiring manager's company's domain {company_domain}, description: "{company_description}". Focus on understanding the company's culture, values, and mission. Identify unique selling points and specific projects or achievements highlighted on the site.
